@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+}
+
 .app {
   display: flex;
   height: 100vh;
@@ -5,7 +9,7 @@
 }
 
 .sidebar {
-  width: 300px;
+  width: 350px;
   background-color: #fff;
   border-right: 1px solid #e0e0e0;
   display: flex;
@@ -24,6 +28,12 @@
   margin: 0;
   font-size: 1.5rem;
   color: #333;
+}
+
+.sidebar-body {
+  display: flex;
+  margin: 10px;
+  overflow-y: auto;
 }
 
 .new-note-btn {

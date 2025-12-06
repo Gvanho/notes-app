@@ -68,13 +68,14 @@ const App: () => JSX.Element = () => {
         </div>
 
         <SearchBar onSearch={handleSearch} />
-
-        <Sidebar
-          notes={notes}
-          currentNote={currentNote}
-          onSelectNote={setCurrentNote}
-          onDeleteNote={handleDeleteClick}
-        />
+        <div className="sidebar-body">
+          <Sidebar
+            notes={notes}
+            currentNote={currentNote}
+            onSelectNote={setCurrentNote}
+            onDeleteNote={handleDeleteClick}
+          />
+        </div>
       </div>
 
       <div className="editor">
