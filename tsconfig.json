@@ -15,7 +15,9 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "jsx": "react-jsx"
   },
   "include": [
     "./src"
