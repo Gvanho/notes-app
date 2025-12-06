@@ -25,7 +25,7 @@ export const SidebarComponent: (props: SidebarProps) => JSX.Element = ({
             <h3 className="note-title">{note.title.substring(0, 15)}{note.title.length > 15 ? '...' : ''}</h3>
             <p className="note-body">{note.body.substring(0, 20)}{note.body.length > 20 ? '...' : ''}</p>
             <div className="note-meta">
-              {new Date(note.updatedAt).toLocaleDateString()}
+              {new Date(note.updatedAt).toLocaleString()}
             </div>
           </div>
           <button
